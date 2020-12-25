@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3b11359a-b709-4a80-83c5-126eaa9eaba2" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="tsconfig.json" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1lsC6QU8czCDstqaVcG9dqt7iBS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="settings.json.schema" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img/main" />
+      <recent name="$PROJECT_DIR$/img" />
+      <recent name="$PROJECT_DIR$/img/shop" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3b11359a-b709-4a80-83c5-126eaa9eaba2" name="Default Changelist" comment="" />
+      <created>1608376236271</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608376236271</updated>
+      <workItem from="1608376237378" duration="4855000" />
+      <workItem from="1608748233995" duration="15592000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="354" y="132" key="#Inspections" timestamp="1608399787260">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="354" y="132" key="#Inspections/0.0.1440.900@0.0.1440.900" timestamp="1608399787260" />
+    <state x="320" y="112" key="#JSON_Schema_Mappings" timestamp="1608379987717">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="112" key="#JSON_Schema_Mappings/0.0.1440.900@0.0.1440.900" timestamp="1608379987717" />
+    <state x="237" y="63" key="SettingsEditor" timestamp="1608380306797">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="237" y="63" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1608380306797" />
+    <state x="229" y="86" key="SettingsEditor/0.25.1393.875@0.25.1393.875" timestamp="1608379639052" />
+    <state x="385" y="196" width="670" height="58" key="search.everywhere.popup" timestamp="1608399092314">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="58" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1608399092314" />
+  </component>
+</project>

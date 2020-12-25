@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TopSneakers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="">
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+
+</head>
+<body>
+</body>
+
+<header class="navbar">
+    <div class="headerLinks">
+        <nav>
+            <ul class="headerFlex">
+                <li>
+                    <a class="headerLink" href="#"><a href="index.html"><img class="logo-dark" src="img/sneaker.logo.png" alt="logo"></a></a>
+                </li>
+                <li>
+                    <a class="headerLink" href="#index.html">Home</a>
+                </li>
+                <li>
+                    <a class="headerLink" href="#store">Store</a>
+                </li>
+                <li>
+                    <a class="headerLink" href="#history.html">History</a>
+                </li>
+                <li>
+                    <a class="headerLink" href="#contact.html">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section>
+        <div class="container">
+            <div class="mySlides fade">
+                <img src="img/main/1.jpg"  class="img">
+                <div class="titles">
+                    <h1 class="title">Air Force 1 Low '07</h1>
+                    <h2 class="micro-title">Foundational Nike pair</h2>
+                </div>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img/main/2.jpg"  class="img">
+                <div class="titles">
+                    <h1 class="title">Air Force 1 "Skeleton"</h1>
+                    <h2 class="micro-title">Halloween coloring</h2>
+                </div>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img/main/3.jpg"  class="img">
+                <div class="titles">
+                    <h1 class="title">Nike Air Force 1 Low x Peaceminusone</h1>
+                    <h2 class="micro-title">Release from a Korean artist</h2>
+                </div>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+
+        <div>
+
+        </div>
+
+
+    </section>
+
+
+</main>
+
+<footer class="contacts">
+    <span id="contacts"></span>
+    <div class="contactsFlex">
+        <nav>
+            <ul class="contactsLinks">
+                <li class="contactLink">
+                    <a href="#">
+                        <span class="iconify" data-inline="false" data-icon="cib:mail-ru" style="font-size: 18px; color: black;"></span>
+                    </a>
+                </li>
+                <li class="contactLink">
+                    <a href="#">
+                        <span class="iconify" data-inline="false" data-icon="cib:instagram" style="font-size: 18px; color: black;"></span>
+                    </a>
+                </li>
+                <li class="contactLink">
+                    <a href="#">
+                        <span class="iconify" data-inline="false" data-icon="cib:facebook" style="font-size: 18px; color: black;"></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+
+<script>let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    const slides = document.getElementsByClassName("mySlides");
+    const dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {
+        slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace("active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+}
+</script>
+<script type="text/javascript" src="shopItem.json"></script>
+<script type="text/javascript" src="functions.js"></script>
+</html>
