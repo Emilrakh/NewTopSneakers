@@ -2,9 +2,108 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>TopSneakers | Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" href="">
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+
 </head>
 <body>
 
+<header class="navbar">
+    <div class="header-links">
+        <nav>
+            <ul class="header-flex">
+                <li>
+                    <a class="header-link" href="#"><a href="index.html"><img class="logo-dark" src="img/sneaker.logo.png" alt="logo"></a></a>
+                </li>
+                <li>
+                    <a class="header-link" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="header-link" href="history.html">History</a>
+                </li>
+                <li>
+                    <a class="header-link" href="contact.html">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+
+
+</main>
+
+<footer class="contact">
+    <span id="contact"></span>
+    <div class="contact-flex">
+        <nav>
+            <div class="contact-logo">
+                <img src="img/sneaker.logo.png" alt="" class="logo">
+                <h4>TOP SNEAKERS</h4>
+            </div>
+            <p class="contact-text">Online purchase of air Force sneakers from the Nike brand.</p>
+            <ul class="contacts-link">
+                <li class="contact-link">
+                    <a href="#">
+                        <span class="iconify" data-inline="false" data-icon="cib:mail-ru" style="font-size: 18px; color: black;"></span>
+                    </a>
+                </li>
+                <li class="contact-link">
+                    <a href="#">
+                        <span class="iconify" data-inline="false" data-icon="cib:instagram" style="font-size: 18px; color: black;"></span>
+                    </a>
+                </li>
+                <li class="contact-link">
+                    <a href="#">
+                        <span class="iconify" data-inline="false" data-icon="cib:facebook" style="font-size: 18px; color: black;"></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <section class="tagline md">
+        <div>
+            <p class="made">2020 TopSneakers, Made by Emil Rakhmangulov</p>
+        </div>
+    </section>
+</footer>
 </body>
+
+<script>let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    const slides = document.getElementsByClassName("mySlides");
+    const dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {
+        slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace("active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+}
+</script>
+<script type="text/javascript" src="shopItem.json"></script>
+<script type="text/javascript" src="functions.js"></script>
 </html>
