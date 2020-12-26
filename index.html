@@ -14,7 +14,35 @@
                 .catch((error)=>console.log(error));
         }
 
-        fetchJson('./shopItem.json').then(()=>console.log('requested'))
+        function createBlock(item, category){
+            var divflex = document.createElement('div');
+            divflex.className = "item-flex";
+
+            var img = document.createElement('img');
+            img.className = "images";
+
+            var div = document.createElement('div');
+
+            divflex.appendChild(img);
+            divflex.appendChild(div);
+
+            var pn = document.createElement('');
+            pn.className = "item-name";
+
+            var pp = document.createElement('');
+            pp.className = "item-price";
+
+            div.appendChild(pn);
+            div.appendChild(pp);
+            
+        }
+
+        fetchJson('./shopItem.json').then(()=>{
+            window.shopItems["Classic"].forEach((item)=> createBlock())
+            window.shopItems["Club only"].forEach((item)=> createBlock())
+            window.shopItems["High model"].forEach((item)=> createBlock())
+            window.shopItems["Colored model"].forEach((item)=> createBlock())
+        })
     </script>
 </head>
 <body>
@@ -139,9 +167,255 @@
         </div>
     </section>
 
-    <section>
-        <span id="store"></span>
-    </section>
+        <section>
+            <span id="store"></span>
+            <div class="store-flex">
+                <div class="store-item-flex">
+                    <h4>Classic</h4>
+                    <div class="item-flex">
+                        <img class="images" src="img/shop/item_1.jpg">
+                        <div>
+                            <p class="item-name">Air Force 1 '07 White</p>
+                            <p class="item-price">5 999₽</p>
+                        </div>
+                    </div>
+                    <div class="item-flex">
+                        <img class="images" src="img/shop/item_2.jpg">
+                        <div>
+                            <p class="item-name">Air Force 1 '07 Black</p>
+                            <p class="item-price">8 299₽</p>
+                        </div>
+                    </div>
+                    <div class="item-flex">
+                        <img class="images" src="img/shop/item_3.jpg">
+                        <div>
+                            <p class="item-name">Air Force 1 '07 AN20</p>
+                            <p class="item-price">8 299₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="store-item-flex">
+                    <h4>Club only</h4>
+
+                </div>
+                <div class="store-item-flex">
+                    <h4>High model</h4>
+
+                </div>
+                <div class="store-item-flex">
+                    <h4>Colored model</h4>
+
+                </div>
+            </div>
+        </section>
+
+
+
+    <!--    <section>-->
+    <!--        <span id="store"></span>-->
+    <!--        <div class="store-flex">-->
+    <!--            <div class="store-item-flex">-->
+    <!--                <h4>Classic</h4>-->
+    <!--                <div class="item-flex">-->
+    <!--                    <img class="images" src="img/shop/item_1.jpg">-->
+    <!--                    <div>-->
+    <!--                        <p class="item-name">Air Force 1 '07 White</p>-->
+    <!--                        <p class="item-price">5 999₽</p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="item-flex">-->
+    <!--                    <img class="images" src="img/shop/item_2.jpg">-->
+    <!--                    <div>-->
+    <!--                        <p class="item-name">Air Force 1 '07 Black</p>-->
+    <!--                        <p class="item-price">8 299₽</p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="item-flex">-->
+    <!--                    <img class="images" src="img/shop/item_3.jpg">-->
+    <!--                    <div>-->
+    <!--                        <p class="item-name">Air Force 1 '07 AN20</p>-->
+    <!--                        <p class="item-price">8 299₽</p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--            <div class="store-item-flex">-->
+    <!--                <h4>Club only</h4>-->
+    <!--                <div class="item-flex">-->
+    <!--                    <img class="images" src="img/shop/item_4.jpg">-->
+    <!--                    <div>-->
+    <!--                        <p class="item-name">Air Force 1 LV8 Black-Wolf Grey-Dark Grey</p>-->
+    <!--                        <p class="item-price">8 299₽</p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="item-flex">-->
+    <!--                    <img class="images" src="img/shop/item_5.jpg">-->
+    <!--                    <div>-->
+    <!--                        <p class="item-name">Air Force 1 '07 LX White-Hyper Royal-Black</p>-->
+    <!--                        <p class="item-price">8 499₽</p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="item-flex">-->
+    <!--                    <img class="images" src="img/shop/item_6.jpg">-->
+    <!--                    <div>-->
+    <!--                        <p class="item-name">Air Force 1 '07 LX Life Lime</p>-->
+    <!--                        <p class="item-price">6 999₽</p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--            <div class="store-item-flex">-->
+    <!--                <h4>High model</h4>-->
+    <!--                <div class="item-flex">-->
+    <!--                    <img class="images" src="img/shop/item_7.jpg">-->
+    <!--                    <div>-->
+    <!--                        <p class="item-name">Air Force 1 High 07 AN20</p>-->
+    <!--                        <p class="item-price">9 999₽</p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="item-flex">-->
+    <!--                    <img class="images" src="img/shop/item_8.jpg">-->
+    <!--                    <div>-->
+    <!--                        <p class="item-name">Air Force 1 High '07 WB</p>-->
+    <!--                        <p class="item-price">11 299₽</p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="item-flex">-->
+    <!--                    <img class="images" src="img/shop/item_9.jpg">-->
+    <!--                    <div>-->
+    <!--                        <p class="item-name">Air Force 1 High 07 AN20</p>-->
+    <!--                        <p class="item-price">9 999₽</p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--            <div class="store-item-flex">-->
+    <!--                <h4>Colored model</h4>-->
+    <!--                <div class="item-flex">-->
+    <!--                    <img class="images" src="img/shop/item_10.jpg">-->
+    <!--                    <div>-->
+    <!--                        <p class="item-name">Air Force 1 Shadow White/Black-Pink Glow-Chile Red</p>-->
+    <!--                        <p class="item-price">9 999₽</p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="item-flex">-->
+    <!--                    <img class="images" src="img/shop/item_11.jpg">-->
+    <!--                    <div>-->
+    <!--                        <p class="item-name">Air Force 1 '07 LV8 3M Orange/Metallic Silver-Black</p>-->
+    <!--                        <p class="item-price">8 499₽</p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="item-flex">-->
+    <!--                    <img class="images" src="img/shop/item_12.jpg">-->
+    <!--                    <div>-->
+    <!--                        <p class="item-name">Air Force 1 '07 Twine/Electro Orange-Sail-White</p>-->
+    <!--                        <p class="item-price">7 999₽</p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </section>-->
+
+
+
+    <!--    <section>-->
+<!--        <span id="store"></span>-->
+<!--        <div class="store-flex">-->
+<!--            <div class="store-item-flex">-->
+<!--                <h4>Classic</h4>-->
+<!--                <div class="item-flex">-->
+<!--                    <img class="images" src="img/shop/item_1.jpg">-->
+<!--                    <div>-->
+<!--                        <p class="item-name">Air Force 1 '07 White</p>-->
+<!--                        <p class="item-price">5 999₽</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="item-flex">-->
+<!--                    <img class="images" src="img/shop/item_2.jpg">-->
+<!--                    <div>-->
+<!--                        <p class="item-name">Air Force 1 '07 Black</p>-->
+<!--                        <p class="item-price">8 299₽</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="item-flex">-->
+<!--                    <img class="images" src="img/shop/item_3.jpg">-->
+<!--                    <div>-->
+<!--                        <p class="item-name">Air Force 1 '07 AN20</p>-->
+<!--                        <p class="item-price">8 299₽</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="store-item-flex">-->
+<!--                <h4>Club only</h4>-->
+<!--                <div class="item-flex">-->
+<!--                    <img class="images" src="img/shop/item_4.jpg">-->
+<!--                    <div>-->
+<!--                        <p class="item-name">Air Force 1 LV8 Black-Wolf Grey-Dark Grey</p>-->
+<!--                        <p class="item-price">8 299₽</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="item-flex">-->
+<!--                    <img class="images" src="img/shop/item_5.jpg">-->
+<!--                    <div>-->
+<!--                        <p class="item-name">Air Force 1 '07 LX White-Hyper Royal-Black</p>-->
+<!--                        <p class="item-price">8 499₽</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="item-flex">-->
+<!--                    <img class="images" src="img/shop/item_6.jpg">-->
+<!--                    <div>-->
+<!--                        <p class="item-name">Air Force 1 '07 LX Life Lime</p>-->
+<!--                        <p class="item-price">6 999₽</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="store-item-flex">-->
+<!--                <h4>High model</h4>-->
+<!--                <div class="item-flex">-->
+<!--                    <img class="images" src="img/shop/item_7.jpg">-->
+<!--                    <div>-->
+<!--                        <p class="item-name">Air Force 1 High 07 AN20</p>-->
+<!--                        <p class="item-price">9 999₽</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="item-flex">-->
+<!--                    <img class="images" src="img/shop/item_8.jpg">-->
+<!--                    <div>-->
+<!--                        <p class="item-name">Air Force 1 High '07 WB</p>-->
+<!--                        <p class="item-price">11 299₽</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="item-flex">-->
+<!--                    <img class="images" src="img/shop/item_9.jpg">-->
+<!--                    <div>-->
+<!--                        <p class="item-name">Air Force 1 High 07 AN20</p>-->
+<!--                        <p class="item-price">9 999₽</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="store-item-flex">-->
+<!--                <h4>Colored model</h4>-->
+<!--                <div class="item-flex">-->
+<!--                    <img class="images" src="img/shop/item_10.jpg">-->
+<!--                    <div>-->
+<!--                        <p class="item-name">Air Force 1 Shadow White/Black-Pink Glow-Chile Red</p>-->
+<!--                        <p class="item-price">9 999₽</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="item-flex">-->
+<!--                    <img class="images" src="img/shop/item_11.jpg">-->
+<!--                    <div>-->
+<!--                        <p class="item-name">Air Force 1 '07 LV8 3M Orange/Metallic Silver-Black</p>-->
+<!--                        <p class="item-price">8 499₽</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="item-flex">-->
+<!--                    <img class="images" src="img/shop/item_12.jpg">-->
+<!--                    <div>-->
+<!--                        <p class="item-name">Air Force 1 '07 Twine/Electro Orange-Sail-White</p>-->
+<!--                        <p class="item-price">7 999₽</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
 
     <section class="tagline">
         <div>
