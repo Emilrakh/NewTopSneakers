@@ -6,7 +6,16 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="">
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <script>
+        async function fetchJson(path){
+            return await fetch(path)
+                .then((response)=>response.json())
+                .then((json) => {console.log(json); window.shopItems = json;})
+                .catch((error)=>console.log(error));
+        }
 
+        fetchJson('./shopItem.json').then(()=>console.log('requested'))
+    </script>
 </head>
 <body>
 
@@ -43,11 +52,6 @@
                     <h1 class="title">Air Force 1 Low "Cactus Jack"</h1>
                     <h2 class="micro-title">Top 2020 Nike pair</h2>
                 </div>
-                <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                </div>
             </div>
 
             <div class="my-slides fade">
@@ -55,11 +59,6 @@
                 <div class="titles">
                     <h1 class="title">Air Force 1 "Skeleton"</h1>
                     <h2 class="micro-title">Halloween coloring</h2>
-                </div>
-                <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
                 </div>
             </div>
 
@@ -69,11 +68,12 @@
                     <h1 class="title">Nike Air Force 1 Low x Peaceminusone</h1>
                     <h2 class="micro-title">Release from a Korean artist</h2>
                 </div>
-                <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                </div>
+            </div>
+
+            <div class="dots" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -88,30 +88,30 @@
 
         <div class="trend-flex">
                 <div class="trend-item">
-                    <img class="shop-item" src="img/shop/item_1.jpg">
-                    <div class="shop-item-dark">
-                        <p >Air Force 1 '07</p>
+                    <img class="shop-item-trend im" src="img/shop/item_1.jpg">
+                    <div class="shop-item-trend dark">
+                        <p class="name">Air Force 1 '07</p>
                         <p class="price">5 999₽</p>
                     </div>
                 </div>
                 <div class="trend-item">
-                    <img class="shop-item" src="img/shop/item_3.jpg">
-                    <div class="shop-item-dark">
-                        <p>Air Force 1 Hight 'AN20</p>
+                    <img class="shop-item-trend im" src="img/shop/item_3.jpg">
+                    <div class="shop-item-trend dark">
+                        <p class="name">Air Force 1 Hight 'AN20</p>
                         <p class="price">8 299₽</p>
                     </div>
                 </div>
                 <div class="trend-item">
-                    <img class="shop-item" src="img/shop/item_9.jpg">
-                    <div class="shop-item-dark">
-                        <p>Air Force 1 '07 AN20</p>
+                    <img class="shop-item-trend im" src="img/shop/item_9.jpg">
+                    <div class="shop-item-trend dark">
+                        <p class="name">Air Force 1 '07 AN20</p>
                         <p class="price">9 999₽</p>
                     </div>
                 </div>
                 <div class="trend-item">
-                    <img class="shop-item" src="img/shop/item_8.jpg">
-                    <div class="shop-item-dark">
-                        <p>Air Force 1 High '07</p>
+                    <img class="shop-item-trend im" src="img/shop/item_8.jpg">
+                    <div class="shop-item-trend dark">
+                        <p class="name">Air Force 1 High '07</p>
                         <p class="price">11 299₽</p>
                     </div>
                 </div>
@@ -127,15 +127,15 @@
                 <h3 class="intro-text">They have really cool shoes.</h3>
                 <h5 class="intro-text">Putin / President</h5>
             </div>
-            <div>
-                <h3 class="intro-text">Great store, all shoes are super quality, work very quickly.
-                    We delivered the goods very quickly! I recommend the store.</h3>
-                <h5 class="intro-text">Tim Cook / CEO</h5>
-            </div>
-            <div>
-                <h3 class="intro-text">Respect to such sneakers...</h3>
-                <h5 class="intro-text">Chipinkos / Rapper</h5>
-            </div>
+<!--            <div>-->
+<!--                <h3 class="intro-text">Great store, all shoes are super quality, work very quickly.-->
+<!--                    We delivered the goods very quickly! I recommend the store.</h3>-->
+<!--                <h5 class="intro-text">Tim Cook / CEO</h5>-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <h3 class="intro-text">Respect to such sneakers...</h3>-->
+<!--                <h5 class="intro-text">Chipinkos / Rapper</h5>-->
+<!--            </div>-->
         </div>
     </section>
 

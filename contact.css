@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+}
+
 .navbar{
     position: fixed;
     left: 0;
@@ -78,6 +82,46 @@ ol.breadcrumb li a:hover {
     text-decoration: underline;
 }
 
+/**/
+
+.info-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.info-img{
+    width: 500px;
+    height: 500px;
+    margin-top: 7%;
+}
+
+.about-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-text{
+    align-items: center;
+    text-align: left;
+    color: #9f9f9f;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.about-text a{
+    color: #9f9f9f;
+}
+
+li {
+    list-style-type: none;
+}
+ul {
+    padding-left: 0;
+}
+
+.about h2{
+    text-align: left;
+}
 
 /**/
 
@@ -137,5 +181,6 @@ ol.breadcrumb li a:hover {
 }
 
 .tagline.md{
+    background-color: #f7f8f9;
     padding: 10px;
 }

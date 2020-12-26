@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+}
+
 .navbar{
     position: fixed;
     left: 0;
@@ -111,7 +115,9 @@ h2{
 }
 
 .about-img{
+    padding-top: 20px;
     width: 100%;
+    left: 0;
 }
 
 /**/
@@ -172,5 +178,6 @@ h2{
 }
 
 .tagline.md{
+    background-color: #f7f8f9;
     padding: 10px;
 }

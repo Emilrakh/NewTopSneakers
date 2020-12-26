@@ -1,8 +1,12 @@
+body{
+    margin: 0;
+}
+
 .navbar{
     position: fixed;
     left: 0;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
     height: 80px;
     width: 100%;
     background-color: white;
@@ -41,19 +45,59 @@
 
 /**/
 
+.my-slides{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    align-items: center;
+}
+
+.img{
+    width: 100%;
+    opacity: 0.85;
+}
+
+.titles{
+    position: absolute;
+    width: 100%;
+    align-items: center;
+    z-index: 100;
+    margin-top: -42%;
+}
 
 .title{
+    /*position: absolute;*/
     align-items: center;
     text-align: center;
-    font-size: 80px;
+    font-size: 100px;
+    font-weight: bold;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.micro-title, h2{
+.micro-title{
+    /*position: absolute;*/
     align-items: center;
     text-align: center;
     font-size: 30px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h2{
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.dots{
+    margin-top: -3%;
 }
 
 .dot {
@@ -74,27 +118,6 @@
 
 .active, .dot:hover {
     background-color: #9f9f9f;
-}
-
-.my-slides{
-    position: relative;
-    display: block;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    align-items: center;
-}
-
-.img{
-    width: 100%;
-    display: block;
-    opacity: 0.85;
-
 }
 
 .fade {
@@ -125,6 +148,7 @@
     font-size: 18px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
+    z-index: 1500;
 }
 
 .next {
@@ -144,21 +168,25 @@
 
 }
 
-.shop-item{
-    width: 200px;
+.shop-item-trend.im{
+    width: 250px;
     margin: 20px 20px;
 }
 
-.shop-item-dark:hover{
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: 0.15;
+.shop-item-trend.dark{
+    /*position: relative;*/
+    position: absolute;
     align-items: center;
     text-align: center;
-    position: absolute;
     top: 0;
     left: 0;
+    width: auto;
+    height: auto;
+}
+
+.shop-item.dark:hover{
+    background-color: black;
+    opacity: 0.60;
 }
 
 p{
@@ -166,8 +194,15 @@ p{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.name {
+    color: white;
+    text-align: center;
+}
+
 .price{
+    color: white;
     font-size: 10px;
+    text-align: center;
 }
 
 /**/

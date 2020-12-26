@@ -1,74 +1,70 @@
-"shopItem" : [
 {
-"tag": "Classic"
-{
-"name": "Air Force 1 '07 White",
-"price": "5 999 ₽",
-"img":"img/shop/item_1.jpg"
-},
-{
-"name": "Air Force 1 '07 Black",
-"price": "8 299 ₽",
-"img":"img/shop/item_2.jpg"
-},
-{
-"name": "Air Force 1 '07 AN20",
-"price": "8 299 ₽",
-"img":"img/shop/item_3.jpg"
-},
-},
-{
-"tag": "Club only"
-{
-"name": "Air Force 1 LV8 Black-Wolf Grey-Dark Grey",
-"price": "8 299 ₽",
-"img":"img/shop/item_4.jpg"
-},
-{
-"name": "Air Force 1 '07 LX White-Hyper Royal-Black",
-"price": "8 499 ₽",
-"img":"img/shop/item_5.jpg"
-},
-{
-"name": "Air Force 1 '07 LX Life Lime",
-"price": "6 999 ₽",
-"img":"img/shop/item_6.jpg"
-},
-},
-{
-"tag": "High model"
-{
-"name": "Air Force 1 High 07 AN20",
-"price": "9 999 ₽",
-"img":"img/shop/item_7.jpg"
-},
-{
-"name": "Air Force 1 High '07 WB",
-"price": "11 299 ₽",
-"img":"img/shop/item_8.jpg"
-},
-{
-"name": "Air Force 1 High 07 AN20",
-"price": "9 999 ₽",
-"img":"img/shop/item_9.jpg"
-},
-},
-{
-"tag": "Colored model"
-{
-"name": "Air Force 1 Shadow White/Black-Pink Glow-Chile Red",
-"price": "9 999 ₽",
-"img":"img/shop/item_10.jpg"
-},
-{
-"name": "Air Force 1 '07 LV8 3M Orange/Metallic Silver-Black",
-"price": "8 499 ₽",
-"img":"img/shop/item_11.jpg"
-},
-{
-"name": "Air Force 1 '07 Twine/Electro Orange-Sail-White",
-"price": "7 999 ₽",
-"img":"img/shop/item_12.jpg"
-},
+  "Classic": [
+    {
+      "name": "Air Force 1 '07 White",
+      "price": "5 999 ₽",
+      "img": "img/shop/item_1.jpg"
+    },
+    {
+      "name": "Air Force 1 '07 Black",
+      "price": "8 299 ₽",
+      "img": "img/shop/item_2.jpg"
+    },
+    {
+      "name": "Air Force 1 '07 AN20",
+      "price": "8 299 ₽",
+      "img": "img/shop/item_3.jpg"
+    }
+  ],
+  "Club only": [
+    {
+      "name": "Air Force 1 LV8 Black-Wolf Grey-Dark Grey",
+      "price": "8 299 ₽",
+      "img": "img/shop/item_4.jpg"
+    },
+    {
+      "name": "Air Force 1 '07 LX White-Hyper Royal-Black",
+      "price": "8 499 ₽",
+      "img": "img/shop/item_5.jpg"
+    },
+    {
+      "name": "Air Force 1 '07 LX Life Lime",
+      "price": "6 999 ₽",
+      "img": "img/shop/item_6.jpg"
+    }
+  ],
+  "High model": [
+    {
+      "name": "Air Force 1 High 07 AN20",
+      "price": "9 999 ₽",
+      "img": "img/shop/item_7.jpg"
+    },
+    {
+      "name": "Air Force 1 High '07 WB",
+      "price": "11 299 ₽",
+      "img": "img/shop/item_8.jpg"
+    },
+    {
+      "name": "Air Force 1 High 07 AN20",
+      "price": "9 999 ₽",
+      "img": "img/shop/item_9.jpg"
+    }
+  ],
+  "Colored model": [
+    {
+      "name": "Air Force 1 Shadow White/Black-Pink Glow-Chile Red",
+      "price": "9 999 ₽",
+      "img": "img/shop/item_10.jpg"
+    },
+    {
+      "name": "Air Force 1 '07 LV8 3M Orange/Metallic Silver-Black",
+      "price": "8 499 ₽",
+      "img": "img/shop/item_11.jpg"
+    },
+    {
+      "name": "Air Force 1 '07 Twine/Electro Orange-Sail-White",
+      "price": "7 999 ₽",
+      "img": "img/shop/item_12.jpg"
+    }
+  ]
 }
-]
