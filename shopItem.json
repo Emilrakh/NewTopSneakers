@@ -1,5 +1,5 @@
 {
-  "Classic": [
+  "classic": [
     {
       "name": "Air Force 1 '07 White",
       "price": "5 999 ₽",
@@ -16,7 +16,7 @@
       "img": "img/shop/item_3.jpg"
     }
   ],
-  "Club only": [
+  "clubOnly": [
     {
       "name": "Air Force 1 LV8 Black-Wolf Grey-Dark Grey",
       "price": "8 299 ₽",
@@ -33,7 +33,7 @@
       "img": "img/shop/item_6.jpg"
     }
   ],
-  "High model": [
+  "highModel": [
     {
       "name": "Air Force 1 High 07 AN20",
       "price": "9 999 ₽",
@@ -50,7 +50,7 @@
       "img": "img/shop/item_9.jpg"
     }
   ],
-  "Colored model": [
+  "coloredModel": [
     {
       "name": "Air Force 1 Shadow White/Black-Pink Glow-Chile Red",
       "price": "9 999 ₽",
